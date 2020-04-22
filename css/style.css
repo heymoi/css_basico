@@ -1,1 +1,23 @@
-h1 {color: red}
+  body {
+      height:100%;
+      margin:0px;
+      padding: 0px;
+  }
+  #contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    margin:10px;
+    margin:0px; padding: 0px;
+  }
+  #menu {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+
+
+  }
+  #div_practicas {
+    width: calc(100% - 220px); height:100vh;;
+    border-left: 20px groove #c1b6d5;
+    margin-left: 200px;
+  }
