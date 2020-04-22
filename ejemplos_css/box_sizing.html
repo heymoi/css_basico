@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplos CSS - Divisiones!</title>
+        <style>
+            #contenedor1 {
+              border: 1px solid #000;
+            }
+            .BoxSizingContentBox{
+              width: 200px;
+              height: 200px;
+              margin: 20px;
+              padding:10px;
+              border: 5px dotted #b51716;
+            }
+            #contenedor2{
+              border: 1px solid #5d4106;
+            }
+            .BoxSizingBorderBox{
+              width: 200px;
+              height: 200px;
+              margin: 20px;
+              padding:10px;
+              border: 5px dotted #b51716;
+              box-sizing:border-box;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="contenedor1">
+            <div class="BoxSizingContentBox">
+              <p> box-sizing:Content-box; este es el valor por defecto. <br /> Este div mide ancho: 230px </p>
+            </div>
+        </div>
+
+        <div id="contenedor1">
+            <div class="BoxSizingBorderBox">
+              <p> box-sizing:border-box; <br /> Este div mide ancho: 200px </p>
+            </div>
+        </div>
+    </body>
+</html>

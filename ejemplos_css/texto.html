@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplos CSS - Fuente!</title>
+            <style>
+                p {
+                    font-family: Arial, sans-serif;
+                    font-size: 28px;
+                    font-weight: bold;
+                    border: 1px solid #ccc;
+                }
+
+                .italic {
+                    font-style:italic;
+                }
+
+                /*
+                Este es un tipo de regla que solo aplica al selector adherido
+                en este caso la clase .parrafo aplica solo a los parrafos o etiqueta <p>
+                */
+                p.parrafo {
+                    color: blue;
+                }
+                p.parrafo2 {
+                  text-align:right;
+                  text-decoration: underline;
+                  text-transform:uppercase;
+                  line-height: 2em;
+                  /*
+                  line-height merece explicacion aparte, esto es el ancho de la linea
+                  la unidad preferible a usar es em o rem
+                  rem es en relacion al tamanio de la fuente del primer elemento, en este caso body,
+                    pero no hay una regla para el body
+                  em es en realacion al actual elemento HTML, pero la clase .parrafo2 no tiene una regla
+                    para el tamanio de la fuente definida, sin embargo, por ser parrafo se hereda de la
+                    regla p (la primera definida) font-size: 28px;
+                    En este caso 1em = 28px
+                    por tanto 2em = (28px * 2)
+                      es decir 2em = 56px
+                  */
+                  border: 1px solid #ccc;
+                }
+            </style>
+    </head>
+    <body>
+        <p>
+            Hello, <span class="italic">world!</span>
+        </p>
+        <p class="parrafo">
+            Aplicando la clase .parrafo
+        </p>
+        <span class="parrafo">
+            Como no es parrafo, no aplica la clase .parraofo
+        </span>
+
+        <p class="parrafo2">
+          Revisando las propiedades CSS de texto
+        </p>
+    </body>
+</html>

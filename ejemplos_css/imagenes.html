@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplos CSS - Imagenes!</title>
+        <style>
+          .img {
+              width: 200px;
+              border: 10px solid #000000;
+          }
+          .img:hover {
+              border-color: #c16520;
+          }
+
+        </style>
+    </head>
+    <body>
+        <!--Como la imagen u.jpg no existe, el navegador mostrara el texto en alt-->
+        <img src="../img/u.jpg" alt="Este eres tu" title="Este eres tu" />
+        <!--cuando modificas solo el ancho, el alto se ajusta automaticamente-->
+        <img src="../img/tu.jpg" alt="Este eres tu" title="Este eres tu" width="50%" />
+        <!--cuando modificas el ancho, debes cuidar la simetria-->
+        <img src="../img/tu.jpg" alt="Este eres tu" title="Este eres tu" width="250px" height="300px" />
+        <!--imagen manejada desde css-->
+        <img src="../img/tu.jpg" class="img" alt="Este eres tu" title="Este eres tu" />
+    </body>
+</html>

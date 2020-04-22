@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplos CSS - Tablas!</title>
+        <style>
+            table {
+                border: 2px solid black;
+                border-collapse: collapse;
+                width: 50%;
+            }
+            tr:nth-child(odd) {
+                background: #bae0e6;
+            }
+            tr:nth-child(even) {
+                background: #e2eaeb;
+            }
+            tr:hover {
+                background: #73e6f5; color: #0e6e68;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 5px;
+                text-align: center;
+            }
+
+            th {
+                background-color: lightgray;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Campeones del Mundo - FIFA</h1>
+        <table>
+            <tr>
+                <th>Año</th>
+                <th>Francia</th>
+                <th>Sede</th>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td>Alemania</td>
+                <td>Rusia</td>
+            </tr>
+            <tr>
+                <td>2014</td>
+                <td>España</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>2010</td>
+                <td>Jefferson</td>
+                <td>Sudáfrica</td>
+            </tr>
+        </table>
+    </body>
+</html>

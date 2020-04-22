@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejemplos CSS - Listas!</title>
+        <style>
+            /*este es un tipo de regla para varios elementos*/
+            ul, ol {
+              border: 1px solid #000; /*Observe que la lista toma el 100% de su contenedora*/
+            }
+            ul {
+              list-style-type: circle;
+              list-style-position:inside;
+            }
+            ol {
+              list-style-type: lower-roman;
+              padding: 20px;
+            }
+            /*Aplica solo a los li que estan dentro de las listas ol y ul*/
+            li {
+              margin:10px;
+              display: list-item;
+              background: #a1cd2c;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Recetas de cocina</h1>
+        <h2>Preparar un café</h2>
+        <h3>Ingredientes</h3>
+        <ul>
+            <li>Un sobre de caf&eacute;</li>
+            <li>Azúcar</li>
+            <li>Agua caliente</li>
+        </ul>
+
+        <h3>Proceso</h3>
+        <ol>
+            <li>Pon a calentar un poco de agua</li>
+            <li>Abre el sobre de café y aplique el contenido en una taza</li>
+            <li>Agregue a la taza 1 cucharada de Azúcar o la cantidad que usted guste</li>
+            <li>Agregue el agua caliente.</li>
+            <li>Remueva con una cuchara</li>
+        </ol>
+    </body>
+</html>

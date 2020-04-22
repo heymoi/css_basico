@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplos CSS</title>
+    <link media="screen" href="./css/style.css" rel="stylesheet" />
+    <style>
+    body{height:100%; margin:0px; padding: 0px;}
+      #contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        margin:10px;
+        margin:0px; padding: 0px;
+      }
+      #menu {
+        width: 200px;
+        height: 100%;
+        position: fixed;
+
+
+      }
+      #div_practicas {
+        width: calc(100% - 220px); height:100vh;;
+        border-left: 20px groove #c1b6d5;
+        margin-left: 200px;
+      }
+    </style>
+  </head>
+  <body>
+
+
+    <div id="contenedor">
+      <div id="menu">
+        <h1 class="titulos">Ejemplos con CSS</h1>
+        <ul>
+          <li><a href="ejemplos_css/texto.html" title="Textos" target="practicas">Textos</a></li>
+          <li><a href="ejemplos_css/enlaces.html" title="Enlaces" target="practicas">Enlaces</a></li>
+          <li><a href="ejemplos_css/imagenes.html" title="Imagenes" target="practicas">Imagenes</a></li>
+          <li><a href="ejemplos_css/listas.html" title="Listas" target="practicas">Listas</a></li>
+          <li><a href="ejemplos_css/tablas.html" title="Tablas" target="practicas">Tablas</a></li>
+          <li><a href="ejemplos_css/box_sizing.html" title="Divisiones-box-sizing" target="practicas">Box Sizing</a></li>
+          <li><a href="ejemplos_css/div_posiciones.html" title="Divisiones-posicion" target="practicas">Posiciones</a></li>
+
+        </ul>
+      </div>
+      <div id="div_practicas">
+
+        <iframe name="practicas" id="practicas" width="100%" height="600px" border="0" style="border:0px" ></iframe>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
